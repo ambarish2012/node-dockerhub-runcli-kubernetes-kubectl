@@ -27,10 +27,10 @@ for file in $GIT_REPO_PATH/gitRepo/pipeline/deploySpecs/*.yaml; do
   baseFile=${file##*/}
   deploymentName=${baseFile%.yaml}
   kubectl apply -f $file --record
-  STATUS=""
+  STATUS="none"
   while [[ "$STATUS" != *"successfully rolled out"* ]]; do
     STATUS=$(kubectl rollout status deployments $deploymentName)
-    echo -e $STATUS"\n"
+    echo -e ...$STATUS"\n"
     sleep 1
   done
 done;
