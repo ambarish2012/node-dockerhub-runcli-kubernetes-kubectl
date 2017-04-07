@@ -16,7 +16,7 @@ env:
     - TESTS_LOC_DIR=$SHIPPABLE_REPO_DIR/tests
     - MOD_LOC=$SHIPPABLE_REPO_DIR/node_modules/.bin/
     - DOCKER_REPO=node-build-push-docker-hub-runcli-kubernetes-kubectl
-    - DOCKER_ACC=ttrahan # replace with your registry account name
+    - DOCKER_ACC=achitnis2012 # replace with your registry account name
 
 build:
   ci:
