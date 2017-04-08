@@ -33,3 +33,7 @@ done;
 # Pass variable names or files (with path) as parameters
 save_state_variables SAMPLE_IMAGE_URL SAMPLE_IMAGE_TAG 
 save_state_files /build/IN/shipdemo-img/version.json
+cat /build/IN/shipdemo-img/version.json
+echo $SAMPLE_IMAGE_URL
+echo $SAMPLE_IMAGE_TAG
+
